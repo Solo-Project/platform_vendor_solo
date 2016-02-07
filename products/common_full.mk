@@ -34,6 +34,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/solo/prebuilt/common/bootanimations/BOOTANIMATION.zip:system/media/bootanimation.zip
 
+PRODUCT_PACKAGES += \
+    OmniJaws \
+    Busybox
+
+# Theme engine
+include vendor/solo/config/themes_common.mk
+
 #Common overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/solo/overlay/common
 
