@@ -39,6 +39,13 @@ PRODUCT_PACKAGES += \
     OmniJaws \
     Busybox
 
+# DU Utils Library
+PRODUCT_PACKAGES += \
+    org.dirtyunicorns.utils
+
+PRODUCT_BOOT_JARS += \
+    org.dirtyunicorns.utils
+
 # Theme engine
 include vendor/solo/config/themes_common.mk
 
