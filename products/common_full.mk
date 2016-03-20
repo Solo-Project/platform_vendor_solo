@@ -53,6 +53,6 @@ include vendor/solo/config/themes_common.mk
 PRODUCT_PACKAGE_OVERLAYS += vendor/solo/overlay/common
 
 # Inherit common product build prop overrides
--include vendor/solo/products/common_versions.mk
+include vendor/solo/products/common_versions.mk
 # Inherit common product build prop overrides
--include vendor/solo/products/filtered.mk
+include vendor/solo/products/filtered.mk
