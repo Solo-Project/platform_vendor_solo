@@ -28,31 +28,26 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 #extras
 PRODUCT_COPY_FILES += \
-    vendor/solo/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
-    vendor/solo/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
-    vendor/solo/prebuilt/common/app/NovaLauncher.apk:system/priv-app/NovaLauncher.apk
+    vendor/tuesday/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
+    vendor/tuesday/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
+    vendor/tuesday/prebuilt/common/app/NovaLauncher.apk:system/priv-app/NovaLauncher.apk
 
 #PRODUCT_COPY_FILES += \
-#    vendor/solo/prebuilt/common/bootanimations/BOOTANIMATION.zip:system/media/bootanimation.zip
+#    vendor/tuesday/prebuilt/common/bootanimations/BOOTANIMATION.zip:system/media/bootanimation.zip
 
 PRODUCT_PACKAGES += \
     OmniJaws \
-    Busybox
-
-# DU Utils Library
-PRODUCT_PACKAGES += \
+    Busybox \
     org.dirtyunicorns.utils
 
 PRODUCT_BOOT_JARS += \
     org.dirtyunicorns.utils
 
-# Theme engine
-include vendor/solo/config/themes_common.mk
-
 #Common overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/solo/overlay/common
-
+PRODUCT_PACKAGE_OVERLAYS += vendor/tuesday/overlay/common
+# Theme engine
+include vendor/tuesday/config/themes_common.mk
 # Inherit common product build prop overrides
-include vendor/solo/products/common_versions.mk
+include vendor/tuesday/products/common_versions.mk
 # Inherit common product build prop overrides
-include vendor/solo/products/filtered.mk
+include vendor/tuesday/products/filtered.mk

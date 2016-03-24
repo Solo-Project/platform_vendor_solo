@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/solo_angler.mk
+    $(LOCAL_DIR)/tuesday_angler.mk

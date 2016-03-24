@@ -5,8 +5,8 @@ PRODUCT_PACKAGES += \
     ThemesProvider
 
 PRODUCT_COPY_FILES += \
-    vendor/solo/config/permissions/org.cyanogenmod.theme.xml:system/etc/permissions/org.cyanogenmod.theme.xml \
-    vendor/solo/config/permissions/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml
+    vendor/tuesday/config/permissions/org.cyanogenmod.theme.xml:system/etc/permissions/org.cyanogenmod.theme.xml \
+    vendor/tuesday/config/permissions/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml
 
 
 
