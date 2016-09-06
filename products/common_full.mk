@@ -5,9 +5,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
     ro.com.google.clientidbase=android-google \
     ro.com.android.wifi-watchlist=GoogleGuest \
+    ro.error.receiver.system.apps=com.google.android.gms \
     ro.setupwizard.enterprise_mode=1 \
-    ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false \
+    ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent \
     ro.adb.secure=1 \
     persist.service.adb.enable=1 \
     persist.sys.usb.config=mtp,adb
@@ -30,6 +31,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     vendor/solo/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
     vendor/solo/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
+
+# init.d script support
+PRODUCT_COPY_FILES += \
+    vendor/solo/prebuilt/common/bin/sysinit:system/bin/sysinit
+
+# init file
+PRODUCT_COPY_FILES += \
+    vendor/solo/prebuilt/common/etc/init.d/init.solo.rc:root/init.solo.rc
 
 PRODUCT_COPY_FILES += \
     vendor/solo/prebuilt/common/bootanimations/BOOTANIMATION.zip:system/media/bootanimation.zip
