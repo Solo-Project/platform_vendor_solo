@@ -24,6 +24,6 @@ ifneq ($(WITH_GMS),true)
 PRODUCT_COPY_FILES += \
     vendor/solo/prebuilt/common/bin/50-solo.sh:system/addon.d/50-solo.sh \
     vendor/solo/prebuilt/common/bin/70-gapps.sh:system/addon.d/70-gapps.sh \
-    vendor/solo/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
-    vendor/solo/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions
+    vendor/solo/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/solo/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions
 endif
