@@ -32,6 +32,14 @@ PRODUCT_COPY_FILES += \
     vendor/solo/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
     vendor/solo/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
 
+#extras
+PRODUCT_COPY_FILES += \
+    vendor/solo/prebuilt/common/app/com.google.android.apps.messaging.apk:system/app/messaging/GoogleMessenger.apk \
+    vendor/solo/prebuilt/common/app/com.google.android.deskclock.apk:system/app/deskclock/GoogleDeskclock.apk \
+    vendor/solo/prebuilt/common/app/com.google.android.calendar.apk:system/app/calendar/GoogleCallendar.apk \
+    vendor/solo/prebuilt/common/app/apex.apk:system/priv-app/Apexlauncher.apk \
+    vendor/solo/prebuilt/common/app/com.google.android.GoogleCamera.apk:system/priv-app/GoogleCamera.apk \
+
 # init.d script support
 PRODUCT_COPY_FILES += \
     vendor/solo/prebuilt/common/bin/sysinit:system/bin/sysinit
