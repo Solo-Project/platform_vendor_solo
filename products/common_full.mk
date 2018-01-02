@@ -32,15 +32,6 @@ PRODUCT_COPY_FILES += \
     vendor/solo/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
     vendor/solo/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
 
-#extras
-PRODUCT_COPY_FILES += \
-    vendor/solo/prebuilt/common/app/GoogleMessenger/com.google.android.apps.messaging.apk:system/app/GoogleMessenger/com.google.android.apps.messaging.apk \
-    vendor/solo/prebuilt/common/app/GoogleDeskClock/com.google.android.deskclock.apk:system/app/GoogleDeskClock/com.google.android.deskclock.apk \
-    vendor/solo/prebuilt/common/app/GoogleCallendar/com.google.android.calendar.apk:system/app/GoogleCallendar/com.google.android.calendar.apk \
-    vendor/solo/prebuilt/common/app/NexusLauncherPrebuilt/NexusLauncherPrebuilt.apk:system/priv-app/NexusLauncherPrebuilt/NexusLauncherPrebuilt.apk \
-    vendor/solo/prebuilt/common/app/GoogleCamera/com.google.android.GoogleCamera.apk:system/priv-app/GoogleCamera/com.google.android.GoogleCamera.apk \
-    vendor/solo/prebuilt/common/app/WallpaperPickerGooglePrebuilt/WallpaperPickerGooglePrebuilt.apk:system/app/WallpaperPickerGooglePrebuilt/WallpaperPickerGooglePrebuilt.apk \
-
 # init.d script support
 PRODUCT_COPY_FILES += \
     vendor/solo/prebuilt/common/bin/sysinit:system/bin/sysinit
