@@ -39,4 +39,3 @@ case "$1" in
     # Stub
   ;;
 esac
-

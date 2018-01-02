@@ -46,6 +46,13 @@ PRODUCT_COPY_FILES += \
 #Common overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/solo/overlay/common
 
+# Backup Tool
+PRODUCT_COPY_FILES += \
+    vendor/solo/prebuilt/common/bin/50-solo.sh:system/addon.d/50-solo.sh \
+    vendor/solo/prebuilt/common/bin/70-gapps.sh:system/addon.d/70-gapps.sh \
+    vendor/solo/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/solo/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
+
 # Inherit common product build prop overrides
 -include vendor/solo/products/common_versions.mk
 # Inherit common product build prop overrides
