@@ -1,0 +1,6 @@
+#!/system/bin/sh
+
+echo "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
+echo "          Solo-Project           "
+echo "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
+echo "       AOSP with a twist           "
