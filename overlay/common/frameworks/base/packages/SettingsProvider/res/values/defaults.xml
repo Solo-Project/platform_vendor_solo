@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2015 The Pure Nexus Project
+     Copyright (C) 2016 The Pure Nexus Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,4 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Googles Backup transport service -->
     <string name="def_backup_transport">com.google.android.gms/.backup.BackupTransportService</string>
+
+    <bool name="def_install_non_market_apps">true</bool>
+    <bool name="def_package_verifier_enable">false</bool>
 </resources> 

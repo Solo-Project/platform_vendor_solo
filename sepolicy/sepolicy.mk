@@ -4,5 +4,4 @@
 #
 
 BOARD_SEPOLICY_DIRS += \
-    vendor/solo/sepolicy
-
+    vendor/nexus/sepolicy
