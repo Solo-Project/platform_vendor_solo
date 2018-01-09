@@ -18,4 +18,3 @@ userdebug_or_eng(`
     allow sysinit sysfs_devices_system_cpu:file write;
     allow sysinit self:capability dac_override;
 ')
-
